@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>773</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(52,51,64);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>50</y>
+      <width>181</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border:none;
+	border-radius: 40px;
+	color:White;
+	
+	font: 14pt &quot;Segoe UI&quot;;
+	min-height:80px;
+	max-height:80px;
+	min-width:80px;
+	max-height:80px;
+	padding: 0px;
+	background: rgba(66,74,136,255)
+}</string>
+    </property>
+    <property name="text">
+     <string>Choose the txt file</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>160</y>
+      <width>821</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal{
+	height: 15px;
+	width: 650px;
+	background:red;
+	border-radius:5px;
+	background:rgba(66,74,136,255)
+}
+QSlider::handle:horizontal{
+	
+	background:White;
+	width:20px;
+	height: 20px;	
+	margin:-7 px -7px;
+	border-radius: 10px;
+}
+
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_Audio_Volume">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>410</y>
+      <width>571</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal{
+	height: 15px;
+	width: 450px;
+	background:red;
+	border-radius:5px;
+	background:rgba(66,74,136,255);
+}
+QSlider::handle:horizontal{
+	background: white;
+	width:20px;
+	height: 20px;	
+	margin:-7 px -7px;
+	border-radius: 10px;
+}
+
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Volume">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>410</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:rgb(255,255,255);
+	border:none;
+	border-radius: 15px;
+	color:rgb(52,51,64);
+	
+	padding: 0px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Value_2">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>230</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white</string>
+    </property>
+    <property name="text">
+     <string>00:00:00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Value1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white</string>
+    </property>
+    <property name="text">
+     <string>00:00:00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_file_name">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>50</y>
+      <width>251</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>14</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+border:none;
+	border-radius: 40px;
+	color:White;
+	font: 14pt &quot;Segoe UI&quot;;
+	min-height:80px;
+	max-height:80px;
+	min-width:80px;
+	max-height:80px;
+	padding: 0px;
+	background: rgba(66,74,136,255)
+}
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="text">
+     <string>     Wav File Name:</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>270</y>
+      <width>426</width>
+      <height>82</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_Seek_back">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color:rgba(66,74,136,255);
+	border:none;
+	border-radius: 40px;
+	color:rgb(255,255,255);
+	min-height:80px;
+	max-height:80px;
+	min-width:80px;
+	max-height:80px;
+	padding: 0px;
+}
+QPushButton:Hover{
+background-color:White;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Stop">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color:rgba(66,74,136,255);
+	border:none;
+	border-radius: 40px;
+	color:rgb(52,51,64);
+	min-height:80px;
+	max-height:80px;
+	min-width:80px;
+	max-height:80px;
+	padding: 0px;
+}
+QPushButton:Hover{
+background-color:White;
+
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_play">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color:rgba(66,74,136,255);
+	border:none;
+	border-radius: 40px;
+	color:rgb(52,51,64);
+	min-height:80px;
+	max-height:80px;
+	min-width:80px;
+	max-height:80px;
+	padding: 0px;
+}
+QPushButton:Hover{
+background-color:white;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_pause">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color:rgba(66,74,136,255);
+	border:none;
+	border-radius: 40px;
+	color:rgb(52,51,64);
+	min-height:80px;
+	max-height:80px;
+	min-width:80px;
+	max-height:80px;
+	padding: 0px;
+}
+QPushButton:Hover{
+background-color:white;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Seek_forward">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color:rgba(66,74,136,255);
+	border:none;
+	border-radius: 40px;
+	color:rgb(52,51,64);
+	min-height:80px;
+	max-height:80px;
+	min-width:80px;
+	max-height:80px;
+	padding: 0px;
+}
+QPushButton:Hover{
+background-color:white;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_pic">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>211</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width:30px;
+height:30px</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>773</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File </string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open Audio File</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
